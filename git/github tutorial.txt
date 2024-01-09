@@ -1,0 +1,238 @@
+https://www.codewithharry.com/videos/git-tut-beginners-hindi-3/
+https://www.simplilearn.com/tutorials/git-tutorial/
+https://www.freecodecamp.org/news/introduction-to-git-and-github/
+
+===========================================================================================================
+
+What is Git and Github?
+
+Version control :: managing and tracking the changes to the program code
+Git is a distributed version control system created by Linus Torvalds in 2005.
+GitHub is a code hosting service that is based on the Git version control system. 
+So, GitHub is a place where developers store their projects and can make network with like-minded people. It�s one of the largest communities for devs. 
+ 
+Git is a software that tracks the code, and GitHub is a website where you can put your code.
+
+=================================================================================================================================
+
+Git Command:: 
+
+pwd => present working directory
+ls => list content on present folder
+cd => change directory
+mkdir ==> to create directory/new folder
+git config --list ==> list all detail
+
+git log/ git history - This command is used to view the history of commits of a repository.
+git config --global user.name �Name� - This command is used to configure or set the user name.
+git config --global user.email �email id� - This command is used to set email.
+
+
+git init - This command makes the directory a Git repository.
+git status - This command is used to check the status of the repository.
+git --version - This command is used to check the version of the Git installed on our system.
+
+git add . - This command adds all the files of a repository to the staging area.
+git add --a
+git add <filename> : to stage perticular file.
+git add -all :
+
+git commit -m �message� - This command is used to commit all the changes. It creates a �save point,� i.e., we can revert to the old savepoint when needed.
+git log - This command is used to view the history of commits of a repository.
+
+git branch ==> cretates new branch
+git branch -M <branchname>==> switch/move branch to desired branch like, master to main
+git remote add origin <repository-link>==> connects the local folder to the repository on GitHub. It is followed by the repository's link.
+
+========================================================================================================================================
+Git/github Installation and Configration::
+
+notes: write somewhere your git/github credentials.
+
+step 1 : install git
+	==> check version, git --version
+step 2 : Create Github Account
+	==>Create an account on GitHub.com here.
+step 3: connect git to github
+	1. set username and email
+	git config --global user.name "ABC"
+	git config --global user.email "youremail@gmail.com"
+	
+	To conform git email set correctly or not? ==> git config --global user.email or git config --list
+
+Step 4: Create some code file locally like git-github tutorial.txt 
+step 5: Create a repository on github
+step 6: Push local code to github through git or vscode
+
+	1. create file with html ! and add some text.
+	2. ?echo "# sample-code" >> README.md (skip if u want in beginning)
+	3. git init
+	4. git add .
+	5. git commit -m "commit message --like, first file commit"
+	6. git branch -M main (want to change branch from master to main)
+	7. git remote add origin https://github.com/<repository-name/sample-code.git ==> from github
+	8. git push -u origin main
+	9. git pull origin master or git pull <repository-link> or git clone <repository-link>
+		Git clone copies all files to the local machine, while git pull only copies the modified files to the local machine.
+		Git clone creates a connection between both repositories, while git pull requires a connection to be made before it can work.
+
+===================================================================================================================================
+
+
+Git repository ::
+
+Git Repository is a .git/ folder inside a project. When we create a Git repository, it tracks all the changes made to the files and folders of that particular directory. The .git/ folder contains the complete history of changes made to that directory, so if you delete the .git/ folder, then your directory no longer behaves as a Git repository.
+
+The .git/ folder is hidden by-default.
+Git Repositories are commonly known as Git Repo.
+
+
+git config --list ==> list of config detail
+
+git checkout -b master : switch to a new branch master 
+
+Dangerious command :: rm -rf .git => To delete repository .git with data, delete your .git folder  
+
+
+
+
+# Create a new branch
+  git branch <branch_name>
+ 
+# List all remote or local branches
+  git branch -a
+
+# Delete a branch
+  git branch -d <branch_name>
+
+
+
+# Checkout an existing branch
+  git checkout <branch_name>
+
+# Checkout and create a new branch with that name
+  git checkout -b <new_branch>
+
+git remote add origin REMOTE-URL
+git remote add origin https://github.com/DharaTrapasia/git-tutorial.git
+
+https://www.codewithharry.com/videos/git-tut-beginners-hindi-3/
+https://www.simplilearn.com/tutorials/git-tutorial/
+https://www.freecodecamp.org/news/introduction-to-git-and-github/
+
+===========================================================================================================
+
+What is Git and Github?
+
+Version control :: managing and tracking the changes to the program code
+Git is a distributed version control system created by Linus Torvalds in 2005.
+GitHub is a code hosting service that is based on the Git version control system. 
+So, GitHub is a place where developers store their projects and can make network with like-minded people. It�s one of the largest communities for devs. 
+ 
+Git is a software that tracks the code, and GitHub is a website where you can put your code.
+
+=================================================================================================================================
+
+Git Command:: 
+
+pwd => present working directory
+ls => list content on present folder
+cd => change directory
+
+git log/ git history - This command is used to view the history of commits of a repository.
+git config --global user.name �Name� - This command is used to configure or set the user name.
+git config --global user.email �email id� - This command is used to set email.
+
+
+git init - This command makes the directory a Git repository.
+git status - This command is used to check the status of the repository.
+git --version - This command is used to check the version of the Git installed on our system.
+
+git add . - This command adds all the files of a repository to the staging area.
+git add --a
+git add <filename> : to stage perticular file.
+git add -all :
+
+git commit -m �message� - This command is used to commit all the changes. It creates a �save point,� i.e., we can revert to the old savepoint when needed.
+git log - This command is used to view the history of commits of a repository.
+
+git branch ==> cretates new branch
+git branch -M <branchname>==> switch/move branch to desired branch like, master to main
+git remote add origin <repository-link>==> connects the local folder to the repository on GitHub. It is followed by the repository's link.
+
+========================================================================================================================================
+Git/github Installation and Configration::
+
+notes: write somewhere your git/github credentials.
+
+step 1 : install git
+	==> check version, git --version
+step 2 : Create Github Account
+	==>Create an account on GitHub.com here.
+step 3: connect git to github
+	1. set username and email
+	git config --global user.name "ABC"
+	git config --global user.email "youremail@gmail.com"
+	
+	To conform git email set correctly or not? ==> git config --global user.email or git config --list
+
+Step 4: Create some code file locally like git-github tutorial.txt 
+step 5: Create a repository on github
+step 6: Push local code to github through git or vscode
+
+	1. create file with html ! and add some text.
+	2. ?echo "# sample-code" >> README.md (skip if u want in beginning)
+	3. git init
+	4. git add .
+	5. git commit -m "commit message --like, first file commit"
+	6. git branch -M main (want to change branch from master to main)
+	7. git remote add origin https://github.com/<repository-name/sample-code.git ==> from github
+	8. git push -u origin main
+	9. git pull origin master or git pull <repository-link> or git clone <repository-link>
+		Git clone copies all files to the local machine, while git pull only copies the modified files to the local machine.
+		Git clone creates a connection between both repositories, while git pull requires a connection to be made before it can work.
+
+	=================================================================================================================================== 
+Git repository ::
+
+Git Repository is a .git/ folder inside a project. When we create a Git repository, it tracks all the changes made to the files and folders of that particular directory. The .git/ folder contains the complete history of changes made to that directory, so if you delete the .git/ folder, then your directory no longer behaves as a Git repository.
+
+The .git/ folder is hidden by-default.
+Git Repositories are commonly known as Git Repo.
+
+
+git config --list ==> list of config detail
+
+git checkout -b master : switch to a new branch master 
+
+Dangerious command :: rm -rf .git => To delete repository .git with data, delete your .git folder  
+
+
+===============================================================================================================================
+
+# Create a new branch
+  git branch <branch_name>
+ 
+# List all remote or local branches
+  git branch -a
+
+# Delete a branch
+  git branch -d <branch_name>
+
+# Checkout an existing branch
+  git checkout <branch_name>
+
+# Checkout and create a new branch with that name
+  git checkout -b <new_branch>
+
+# To rename branch
+git branch -b <old-name> <new-name>
+
+# to push code on github
+git remote add origin REMOTE-URL
+
+# to delete your last commit on github
+git reset --hard HEAD^
+git push origin -f
+
+
